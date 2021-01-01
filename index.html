@@ -27,7 +27,7 @@
           <a href="#skills" class="nav-link">Skills</a>
         </li>
         <li>
-          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#portfolio" class="nav-link">Projects</a>
         </li>
         <li>
           <a href="#qualifications" class="nav-link">Qualifications and Achievements</a>
@@ -46,10 +46,10 @@
 
   <section class="about" id="about">
     <div class="container">
-      <div class="profile-img">
+      <div class="profile-img" data-aos="fade-right" data-aos-delay="300">
         <img src="images/profile-photo.jpeg" alt="Mridul Wadhwa">
       </div>
-      <div class="about-details">
+      <div class="about-details" data-aos="fade-left" data-aos-delay="600">
         <div class="about-heading">
           <h1>About</h1>
           <h6>Myself</h6>
@@ -96,7 +96,7 @@
         <h6>My Skills</h6>
       </div>
       <div class="my-skills">
-        <div class="skill">
+        <div class="skill" data-aos="fade-in" data-aos-delay="300">
           <div class="icon-container">
             <i class="fas fa-terminal"></i>
           </div>
@@ -105,7 +105,7 @@
             Fluent in C/C++, Python and Ruby. I can also work in Rust and Julia.
           </p>
         </div>
-        <div class="skill">
+        <div class="skill" data-aos="fade-in" data-aos-delay="600">
           <div class="icon-container">
             <i class="fas fa-palette"></i>
           </div>
@@ -114,7 +114,7 @@
             GIMP and Inkscape are my tools of trade.
           </p>
         </div>
-        <div class="skill">
+        <div class="skill" data-aos="fade-in" data-aos-delay="900">
           <div class="icon-container">
             <i class="fas fa-code"></i>
           </div>
@@ -123,7 +123,7 @@
             Experienced in working with Node.JS, jQuery and Databases alongwith vanilla HTML5, CSS3 and Javascript.
           </p>
         </div>
-        <div class="skill">
+        <div class="skill" data-aos="fade-in" data-aos-delay="1200">
           <div class="icon-container">
             <i class="fas fa-language"></i>
           </div>
@@ -136,48 +136,51 @@
     </div>
   </section>
 
-  <section class="projects" id="projects">
+  <section class="portfolio" id="portfolio">
     <div class="container">
       <div class="section-heading">
         <h1>Projects</h1>
         <h6>Some of my recent and ongoing work</h6>
       </div>
-      <div class="project-item">
-        <div class="project-img has-margin-right">
-          <img src="images/portitem1.jpeg" alt="Neovim IDE">
+      <div class="portfolio-item">
+        <div class="portfolio-img has-margin-right">
+          <img src="images/IDE.png" alt="">
         </div>
-        <div class="project-description">
+        <div class="portfolio-description">
           <h6>Software Development</h6>
           <h1>NeoVim IDE</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, alias sapiente. Placeat neque, laboriosam dolorem maiores dignissimos illum aliquam cum?
+            Written in Vim Script to make NeoVim(fork of Vim) look and function like a modern IDE similar to Atom or VS-Code. <br>
+            Focusses on combining efficiency and light-weight nature of vim with modern creature comforts of an IDE. <br>
+            Features include: Language based autocompletion, code snippets, Side Navigation Pane, Fuzzy Search, Syntax highlighting, Markdown Preview, LaTeX Preview, realtime Linting, Status Bar, Filetype Glyphs and various hand-picked colorschemes alongwith default ones. Screenshot pasted alongside.
           </p>
-          <a href="#" class="cta">View Details</a>
-      </div>
-      <div class="project-item">
-        <div class="project-description has-margin-right">
-          <h6>Software Development</h6>
-          <h1>Automation script for stick hero</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, alias sapiente. Placeat neque, laboriosam dolorem maiores dignissimos illum aliquam cum?
-          </p>
-          <a href="#" class="cta">View Details</a>
-        </div>
-        <div class="project-img">
-          <img src="images/portitem2.jpeg" alt="Automation Script Stick Hero">
+          <a href="https://github.com/M108Falcon/dotFiles/tree/master/nVim" target="_blank" class="cta">View Details</a>
         </div>
       </div>
-      <div class="project-item">
-        <div class="project-img has-margin-right">
-          <img src="images/portitem3.jpeg" alt="Research Paper">
-        </div>
-        <div class="project-description">
-          <h6>Research Paper</h6>
-          <h1>Capthcah Bypass: Review</h1>
+      <div class="portfolio-item">
+        <div class="portfolio-description has-margin-right">
+          <h6>Cyber Security</h6>
+          <h1>Script to detect vulnerability CVE-2019-14287 automatically</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, alias sapiente. Placeat neque, laboriosam dolorem maiores dignissimos illum aliquam cum?
+            CVE-2019-14287 is one of the highest rated vulnerabilities found in linux system in recent times. The script written in python as well as bash checks if the vulnerability exists in the system. Can be integrated with LinEnum.sh for detection over a network. 
           </p>
-          <a href="#" class="cta">View Details</a>
+          <a href="https://github.com/M108Falcon/Sudo-CVE-2019-14287" target="_blank" class="cta">View Details</a>
+        </div>
+        <div class="portfolio-img">
+          <img src="images/linux-system.jpg" alt="">
+        </div>
+      </div>
+      <div class="portfolio-item">
+        <div class="portfolio-img has-margin-right">
+          <img src="images/whiteboard.jpg" alt="">
+        </div>
+        <div class="portfolio-description">
+          <h6>Web Development</h6>
+          <h1>Lightweight Whiteboard</h1>
+          <p>
+            Lightweight and Open Source whiteboard webapp for PCs that can serve as alternative to MS Whiteboard or similar heavy applications. Built with Javascript Canvas API and vanilla HTML5 and CSS3 for fast response time. <br>
+          </p>
+          <a href="https://github.com/M108Falcon/Whiteboard" target="blank" class="cta">View Details</a>
         </div>
       </div>
     </div>
@@ -186,26 +189,32 @@
   <section class="qualifications" id="qualifications">
     <div class="container">
       <div class="section-heading">
-        <h1>Qualifications and Achievements</h1>
+        <h1>Qualifications and Academic Achievements</h1>
         <h6>My academic qualifications and Achievements</h6>
       </div>
-      <div class="timeline">
+      <div class="timeline" data-aos="fade-down" data-aos="delay=600">
         <ul>
           <li class="date" data-date="2015">
             <h1>Class 10</h1>
-             Passed class 10 with 9.8 CGPA out of 10
+             Completed class 10 with 9.8 CGPA out of 10 from Little Angels School.
           </li>
           <li class="date" data-date="2017">
-            <h1>High School (10+2)</h1>
-            Passed high school with 85% aggregate.
+            <h1>High School (Class 12)</h1>
+            Completed high school with 85% aggregate from Little Angels School.
           </li>
           <li class="date" data-date="2019">
             <h1>Research Paper</h1>
-            Research Paper published.
+            Research Paper published. <br> CAPTCHA Bypass Prevention Mechanisms: A review <br>
+            <a href="http://www.iosrjournals.org/iosr-jce/papers/Vol22-issue3/Series-4/D2203042329.pdf" target="_blank" atl="reserach papaer">Read</a>
           </li>
           <li class="date" data-date="2020">
             <h1>Networking Certification</h1>
-            Got networking certification via NPTEL for the course: Demystifying Networking.
+            Got networking certification via NPTEL for the course: Demystifying Networking. <br>
+            <a href="images/Demystifying Networking.jpg" target="_blank" alt="certificate">View</a>
+          </li>
+          <li class="date" data-date="Present">
+            <h1>Bachelors</h1>
+            Pursuing my Bachelors degree in Computer Science and Engineering with Specialization in Cyber Security and Forensics from Manav Rachna International Institue of Research and Studies.
           </li>
         </ul>
       </div>
@@ -218,7 +227,7 @@
         <h1>Contact Me</h1>
         <h6>Let's work together</h6>
       </div>
-      <form action="", id="usrform">
+      <form action="", id="usrform" data-aos="fade-up" data-aos="delay=300">
         <label for="name">Name: </label>
         <input type="text" name="name" id="name" placeholder="Enter your name" required>
         <label for="email">Email Address: </label>
@@ -232,8 +241,8 @@
   <footer class="copyright">
     <div class="up" id="up">
       <i class="fas fa-chevron-up"></i>
-      <p>&copy; 2020 Mridul Wadhwa</p>
     </div>
+    <p>&copy; 2021 Mridul Wadhwa</p>
   </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
