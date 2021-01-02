@@ -277,6 +277,10 @@ li{
 .fa-reddit:hover{
     color: #ff570f
 }
+
+.fa-envelope:hover{
+    color: #fbbc05;
+}
 /*End about*/
 
 /*Start skills*/
